@@ -1,16 +1,19 @@
 var output = []
 var count = 1
-function fizzBuzz () {
-  if (count % 3 === 0 && count % 5 === 0) {
-    output.push('FizzBuzz')
-  }
-  else if (count % 3 === 0) {
-    output.push('fizz')
-  }else if (count % 5 === 0) {
-    output.push('Buzz')
-  }else {
-    output.push(count)
-  }
-  count++
-  console.log(output)
-}
+
+  function fizzBuzz () {
+    for (let count = 1; count < 901; count++){
+      if (count % 3 === 0 && count % 5 === 0) {
+        output.push('FizzBuzz')
+      }
+      else if (count % 3 === 0) {
+        output.push('fizz');
+      }else if (count % 5 === 0) {
+        output.push('Buzz')
+      }else {
+        output.push(count);
+      }
+      
+      console.log(output);
+    }
+    }
